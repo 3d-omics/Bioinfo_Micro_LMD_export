@@ -21,7 +21,7 @@ This repository contains R and Python scripts for generating precise spacial mic
 ### 1. Prepare working directory
 ```{sh}
 # Clone the repository
-git clone https://github.com/3d-omics/Bioinfo_Macro_Host_Transcriptomics.git
+git clone https://github.com/3d-omics/Bioinfo_Micro_LMD_export.git
 cd Bioinfo_Macro_Host_Transcriptomics
 mkdir input #for storing the input RTF and CSV files
 mkdir output #for storing output PDF, HTML and TSV files
@@ -37,12 +37,12 @@ Place desired RTF (could be multiple) and CSV (must be a single one) files in th
 ### 3. Launch script
 
 Rscript LMD_report.R \
- -b {batchname}
- -r {trf input file(s)}
- -c {csv input file}
- -t {tsv input file}
- -p {pdf input file}
- -w {html input file}
+ - -b {batchname} \
+ - -r {trf input file(s)} \
+ - -c {csv input file} \
+ - -t {tsv input file} \
+ - -p {pdf input file} \
+ - -w {html input file} \
 
 If using multiple RTF files, list them comma-separated without spaces as shown below.
 ```{sh}
