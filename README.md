@@ -1,4 +1,4 @@
-# Bioinfo_Micro_LMD_data_export
+# Laser microdissection data export
 This repository contains R and Python scripts for generating precise spacial microdissection information from raw CSV and RTF file produced by the Leica LMD7 software.
 
 ## Dependencies
@@ -89,7 +89,7 @@ The microsample positioning data looks like this (all units are in µm):
 #### Single cut overviews
 The report outputs the information and a visual representation of every cuts performed.
 - **Collector:** C1
-- **X−axis:** 43469.44 μm 
+- **X−axis:** 43469.44 μm
 - **Y−axis:** 17748.21 μm
 - **Area:** 213844 μm
 - **Diameter:** 521.8 μm
