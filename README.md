@@ -36,13 +36,13 @@ Place desired RTF (could be multiple) and CSV (must be a single one) files in th
 
 ### 3. Launch script
 
-Rscript LMD_report.R \
- - -b {batchname} \
- - -r {trf input file(s)} \
- - -c {csv input file} \
- - -t {tsv input file} \
- - -p {pdf input file} \
- - -w {html input file} \
+Rscript LMD_report.R
+ - -b {batch name}
+ - -r {rtf input file(s)}
+ - -c {csv input file}
+ - -t {tsv output file}
+ - -p {pdf output file}
+ - -w {html output file}
 
 If using multiple RTF files, list them comma-separated without spaces as shown below.
 ```{sh}
@@ -54,3 +54,18 @@ The following output files should be found in the output folder:
 - output/D015cH109_230811.html
 - output/D015cH109_230811.pdf
 - output/D015cH109_230811.tsv
+
+#### Positioning data
+
+|collector|cutPositionX|cutPositionY|radius|area|fieldX|fieldY|fieldW|fieldH|
+| ---  | ---  | ---  | ---  | ---  | ---  | ---  | ---  | ---  |
+|A1 | 44627.28 | 13486.46 | 287.00 | 258769 | 42361.80 | 11852.60 | 5011.2000 | 3758.4000 |
+|B1 | 44021.76 | 14324.27 | 287.00 | 258769 | 42361.80 | 11852.60 | 5011.2000 | 3758.4000 |
+|C1 | 11893.07 | 21371.01 | 287.00 | 258769 | 9395.30 | 18993.30 | 5011.2000 | 3758.4000 |
+|B2 | 75203.29 | 38863.49 | 19.79 | 1231 | 75124.60 | 38836.15 | 198.7968 | 149.0976 |
+|C2 | 75221.83 | 38899.52 | 19.79 | 1231 | 75124.60 | 38836.15 | 198.7968 | 149.0976 |
+|D2 | 75196.98 | 38950.46 | 19.79 | 1231 | 75124.60 | 38836.15 | 198.7968 | 149.0976 |
+|E2 | 75268.00 | 38876.74 | 19.79 | 1231 | 75124.60 | 38836.15 | 198.7968 | 149.0976 |
+|A3 | 11463.57 | 29818.68 | 176.10 | 97424 | 10443.42 | 29456.67 | 1252.3584 | 939.2688 |
+|B3 | 45397.72 | 13727.23 | 176.10 | 97424 | 44867.42 | 13262.17 | 1252.3584 | 939.2688 |
+|D3 | 11445.96 | 30196.34 | 176.10 | 97424 | 10443.42 | 29456.67 | 1252.3584 | 939.268 |
