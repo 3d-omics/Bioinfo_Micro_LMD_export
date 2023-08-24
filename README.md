@@ -55,7 +55,13 @@ The following output files should be found in the output folder:
 - output/D015cH109_230811.pdf
 - output/D015cH109_230811.tsv
 
-#### Positioning data
+#### Cutting stage overview
+The report outputs an overview of all cuts performed on the stage.
+
+![Overview of 48 microsamples collected in 6 strips.](figures/stage_overview.png)
+
+#### Positioning data (tsv table)
+The microsample positioning data looks like this (all units are in µm):
 
 |collector|cutPositionX|cutPositionY|radius|area|fieldX|fieldY|fieldW|fieldH|
 | ---  | ---  | ---  | ---  | ---  | ---  | ---  | ---  | ---  |
@@ -69,3 +75,24 @@ The following output files should be found in the output folder:
 |A3 | 11463.57 | 29818.68 | 176.10 | 97424 | 10443.42 | 29456.67 | 1252.3584 | 939.2688 |
 |B3 | 45397.72 | 13727.23 | 176.10 | 97424 | 44867.42 | 13262.17 | 1252.3584 | 939.2688 |
 |D3 | 11445.96 | 30196.34 | 176.10 | 97424 | 10443.42 | 29456.67 | 1252.3584 | 939.268 |
+
+- **collector**: exact well in a plate or strip in which the microsample was collected.
+- **cutPositionX**: absolute horizontal stage coordinate of the microsample.
+- **cutPositionY**: absolute vertical stage coordinate of the microsample.
+- **radius**: radius of the cut ellipse.
+- **area**: area of the cut ellipse.
+- **fieldX**: absolute horizontal stage coordinate of the top-left corner of the field-of-view image.
+- **fieldY**: absolute vertical stage coordinate of the top-left corner of the field-of-view image.
+- **fieldW**: horizontal size (in µm) of the field-of-view image.
+- **fieldH**: vertical size (in µm) of the field-of-view image.
+
+#### Single cut overviews
+The report outputs the information and a visual representation of every cuts performed.
+- **Collector:** C1
+- **X−axis:** 43469.44 μm 
+- **Y−axis:** 17748.21 μm
+- **Area:** 213844 μm
+- **Diameter:** 521.8 μm
+- **Magnification:** 2.5X
+
+![Visual representation of a single cut.](figures/cut_overview.png)
