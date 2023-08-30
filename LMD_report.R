@@ -20,6 +20,10 @@ parser$add_argument("-p", "--pdf", action="store", help="PDF output file")
 parser$add_argument("-w", "--html", action="store", help="HTML output file")
 args <- parser$parse_args()
 
+#Create required directories
+dir.create("images")
+dir.create("output")
+
 #Render pdf document using LMD_report_v2
 rmarkdown::render("LMD_report_v2.R", params = list(batch=args$batch, rtf = args$rtf, csv = args$csv, tsv = args$tsv), output_format = "pdf_document", output_file = args$pdf)
 
